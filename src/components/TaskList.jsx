@@ -14,7 +14,7 @@ function TaskList() {
   }
 
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  justify-center items-center">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5   justify-center items-start">
       {tasksGeneral.map((taskIterando) => (
         <TaskCard key={taskIterando.id} taskInstancia={taskIterando} />
       ))}

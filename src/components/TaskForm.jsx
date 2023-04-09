@@ -30,12 +30,12 @@ function TaskForm() {
       <form
         action=""
         onSubmit={handleSubmit}
-        className="bg-slate-800 p-5 mb-5"
+        className="bg-slate-800 p-5 mb-5 flex flex-col justify-center items-center rounded-md"
       >
         <h1 className="text-2xl font-bold text-white mb-3 text-center">Crea tu tarea</h1>
         <input
           type="text"
-          className="bg-slate-300 p-3 w-full mb-5 rounded-md"
+          className="bg-slate-100 p-3 w-full mb-5 rounded-md font-sans text-lg"
           placeholder="Escribe tu  tarea"
           onChange={(event) => {
             setTitle(event.target.value);
@@ -45,14 +45,14 @@ function TaskForm() {
         />
         <textarea
           type="text"
-          className="bg-slate-300 p-3 w-full mb-5 rounded-md"
+          className="bg-slate-100 p-3 w-full mb-5 rounded-md font-sans text-lg"
           placeholder="Escribe una descripción"
           onChange={(event) => {
             setDescription(event.target.value);
           }}
           value={description}
         />
-        <button className="bg-indigo-500 px-8 py-1 text-white rounded-md mx-auto">Añadir</button>
+        <button className="bg-green-600 px-2 py-1 w-44 text-white rounded-md">Añadir</button>
       </form>
     </div>
   );
